@@ -1,0 +1,35 @@
+# Entornos
+venv/
+.venv/
+*/venv/
+__pycache__/
+*.pyc
+
+# Editor
+.vscode/
+.cursor/
+
+# Datos y cachés (viven en $LUSTRE, nunca en el repo)
+data/
+datasets/
+.cache/
+huggingface/
+hf_cache/
+
+# Resultados y modelos
+outputs/
+checkpoints/
+runs/
+wandb/
+lightning_logs/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+
+# Logs de SLURM: se ignoran; los que sirvan de evidencia de tiempos se
+# copian a propósito (git add -f) a una carpeta evidence/ del entregable.
+slurm-*.out
+*.out
+*.err

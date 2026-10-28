@@ -1,0 +1,8 @@
+# Dependencias mínimas del Lab AI (BERT-base / SQuAD).
+# torch viene con CUDA en FT3 (instalado en el venv del curso, $STORE/mypython).
+# TODO: sustituir por las versiones exactas del venv de FT3 con
+#   pip freeze | grep -iE '^(torch|transformers|datasets|numpy|tokenizers|accelerate)=='
+torch
+transformers
+datasets
+numpy
